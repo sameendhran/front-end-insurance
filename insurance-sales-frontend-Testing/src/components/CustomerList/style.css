@@ -1,0 +1,126 @@
+/* src/components/CustomerList/style.css */
+
+.customer-list-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.customer-list-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.customer-list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.customer-add-button {
+  background-color: #2563eb; /* Blue */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.customer-add-button:hover {
+  background-color: #1d4ed8; /* Darker blue */
+}
+
+.customer-message {
+  text-align: center;
+  padding: 1rem;
+  color: #4b5563; /* Medium gray */
+}
+
+.customer-error-message {
+  text-align: center;
+  padding: 1rem;
+  color: #dc2626; /* Red */
+  background-color: #fef2f2; /* Light red background */
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.customer-retry-button {
+  background-color: #f9fafb; /* Light gray */
+  color: #374151; /* Dark gray */
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.customer-retry-button:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.customer-table-wrapper {
+  overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.875rem; /* ~14px */
+}
+
+.customer-table th,
+.customer-table td {
+  border: 1px solid #e5e7eb; /* Light border */
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.customer-table th {
+  background-color: #f3f4f6; /* Light gray header */
+  color: #374151; /* Dark gray text */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.customer-table tr:nth-child(even) {
+  background-color: #f9fafb; /* Alternate row background */
+}
+
+.customer-table tr:hover {
+  background-color: #eff6ff; /* Light blue on hover */
+}
+
+.customer-actions-cell {
+  text-align: center; /* Center actions buttons */
+  white-space: nowrap; /* Prevent buttons from wrapping */
+}
+
+.customer-edit-button {
+  background-color: #3b82f6; /* Blue */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.customer-edit-button:hover {
+  background-color: #2563eb; /* Darker blue */
+}
